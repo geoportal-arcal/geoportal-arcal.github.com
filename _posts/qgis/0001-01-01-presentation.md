@@ -4,6 +4,6 @@ category : QGIS
 tags : [desktop GIS]
 ---
 
-<iframe width="420" height="315" src="http://www.youtube.com/embed/RuCI1cTuczs" frameborder="0" allowfullscreen="allowfullscreen"> </iframe>
+[Look at YouTube video or your local copy of "Elevation profile in Google Earth"](http://www.youtube.com/embed/RuCI1cTuczs)
 
 

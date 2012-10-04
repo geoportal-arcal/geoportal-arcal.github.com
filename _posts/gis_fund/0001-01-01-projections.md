@@ -3,6 +3,8 @@ layout: post
 category : GIS fundamentals
 tags : [projection, SRS, geodesy]
 ---
+**WORK IN PROGRESS ...**
+
 Mapping involves determing the geographic locations of features on the earth, transforming these locations into positions on a flat map through use of map projection.
 
 The **first step** is to choose a model of reference for the shape of the earth.

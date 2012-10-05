@@ -34,6 +34,8 @@ This account will offer several interesting opportunities:
 1. Go [there](https://www.dropbox.com/) to create a Dropbox account and install it on your computer
 2. send me your e-mail address used and associated with your dropbox account. I will share the specific folders.
 
+Please, note that to create your DropBox account, you need to use your e-mail address (professional or personal one), not the ARCAL RLA5/051 one.
+
 **CASE 3**: You don't have yet a Dropbox account and don't want to create one.
 
 1. No problem, you can access ARCAL RLA 5/051 Dropbox account directly online using the login and password sent by e-mail.

@@ -11,10 +11,19 @@ As you saw in the previous tutorials, when we want to open a vector layer, we op
 2. ".dbf" 
 3. ".shx"
 
+.shp	The main file that stores the feature geometry. No attributes are stored in this file—only geometry.	Yes
+.shx	A companion file to the .shp that stores the position of individual feature IDs in the .shp file.	Yes
+.dbf	The dBASE table that stores the attribute information of features.	Yes
+.sbn and .sbx	Files that store the spatial index of the features.	No
+.atx	Created for each dBASE attribute index created in ArcCatalog.	No
+.ixs and .mxs	Geocoding index for read/write shapefiles.	No
+.prj	The file that stores the coordinate system information.	No
+.xml	Metadata for ArcGIS—stores information about the shapefile.
+
 We saw earlier that a GIS file is the marriage of a drawing software and database software and that any GIS layer open in QGIS for instance show both a map view and a data attribute view. This fact is reflected in the composition of a **"shapefile"**: 
-1. **".shp"** file: contains the geometry, the "shapes" (for instance points, lines or polygons with their associated coordinates)
-2. **".dbf"** file: contains the attributes values (for instance population, name, country name of world capital cities) 
-3. **".shx"** file: containes shapes index, a positional index of the feature geometry to allow seeking forwards and backwards quickly.
+1. **".shp"** file: contains the geometry of features, the "shapes" (for instance points, lines or polygons with their associated coordinates)
+2. **".dbf"** file: contains the attribute information of features (for instance population, name, country name of world capital cities) 
+3. **".shx"** file: a companion file to the .shp, contains shapes index, a positional index of the feature geometry to allow seeking forwards and backwards quickly.
 
 Note that in each of the ".shp", ".shx", and ".dbf" files, the shapes in each file correspond to each other in sequence. That is, the first record in the ".shp" file corresponds to the first record in the ".shx" and ".dbf" files, and so on.
 

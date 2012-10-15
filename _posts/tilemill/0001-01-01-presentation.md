@@ -13,14 +13,14 @@ With **TileMill** and its online companion application named **MapBox** maps dis
 
 The process can be summarize as follow:
 1. Open your GIS layers of interest (for instance the ones you created with QGIS)
-2. Apply styles (mss language)
+2. Apply styles (**Carto** '*.mss' language)
 3. Generate **.mbtiles** (see notes below)
 4. Import **.mbtiles** in MapBox
 5. Now your interactive layers are available in the cloud
 
 **Notes:**
 
-* The *mss* (Mapping Style Sheet) language allows to create in a text mode styles and apply it to your layers. It might look like an advanced techniques but it is finally far more simple and efficient than opening a dozen of windows and clicking on menus, ...). For those who are familiar with **CSS* the approach is extremly similar for the others it is very easy to learn it.
+* The **Carto** ('*.mss file') (Mapping Style Sheet) language allows to create in a text mode styles and apply it to your layers. It might look like an advanced techniques but it is finally far more simple and efficient than opening a dozen of windows and clicking on menus, ...). For those who are familiar with **CSS* the approach is extremly similar for the others it is very easy to learn it.
 
 * **.mbtiles** is a file format allowing to embed in a single file your styled data at different zoom levels and to store it as tiles. At each zoom level your map will be divided in small tiles (squares of 125px*125px for instance). As a result when you want to visualize online your maps, your navigator only shows the part of the layer you are currently visualizing (according to the zoom level). This technique makes maps visualization on the web very fast. For further and more detailed information refer to this link [http://mapbox.com/developers/guide/](http://mapbox.com/developers/guide/). 
 

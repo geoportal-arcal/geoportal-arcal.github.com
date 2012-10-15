@@ -72,8 +72,7 @@ In that tutorial, based on the layer we have just created (by importing csv file
 
 File to be used in that tutorial is:
 
-    /dss_course_dataset/shp/solutions/grid_Cesium.shp
-
+    /dss_course_dataset/shp/grid_Cesium.shp (the one you have just created by importing the CSV file)
 
 See video tutorial either on your local copy or on YouTube [QGIS-Adding Calculated Field](http://www.youtube.com/watch?feature=player_detailpage&v=2eREApVNAx0)
 

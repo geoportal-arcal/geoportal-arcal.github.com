@@ -12,7 +12,7 @@ In this tutorial, we will see how to install and activate new plugins (here, **'
 
 File used in that tutorial:
 
-    /dss_course_dataset/shp/natural_earth/ne_10m_populated_places_simple.shp (world main cities)
+    /dss_course_dataset/qgis/shp/natural_earth/ne_10m_populated_places_simple.shp (world main cities)
 
 See video tutorial either on your local copy or on YouTube [QGIS-Installing new plugins](http://www.youtube.com/watch?v=pkQXuj-ISYw&feature=player_detailpage) 
 

@@ -10,7 +10,7 @@ We will create here a "Latin America" vector layer from an existing vector layer
 
 File to be used in that tutorial is:
 
-    /dss_course_dataset/shp/natural_earth/ne_10m_admin_0_countries.shp (world countries)
+    /dss_course_dataset/qgis/shp/natural_earth/ne_10m_admin_0_countries.shp (world countries)
 
 See video tutorial either on your local copy or on YouTube [QGIS-Vector Layer Creation Through Selection](http://www.youtube.com/watch?v=NhSmy5IcxOw&feature=player_detailpage) 
 
@@ -36,7 +36,7 @@ In this tutorial, we will import a ".csv" file embedding geographic coordinates 
 
 File to be used is:
 
-    /dss_course_dataset/csv/grid_Cs.csv (measurements of Cesium137, its error, estimated soil_loss)
+    /dss_course_dataset/qgis/csv/grid_Cs.csv (measurements of Cesium137, its error, estimated soil_loss)
 
 **IMPORTANT**
 When importing a ".csv" file, a 'companion' file needs to be systematically created in order to specify the data type of each individual field. In our case, we have a ".csv" file we want to import whose name is "grid_Cs.csv" with the following content:
@@ -72,7 +72,7 @@ In that tutorial, based on the layer we have just created (by importing csv file
 
 File to be used in that tutorial is:
 
-    /dss_course_dataset/shp/grid_Cesium.shp (the one you have just created by importing the CSV file)
+    /dss_course_dataset/qgis/shp/grid_Cesium.shp (the one you have just created by importing the CSV file)
 
 See video tutorial either on your local copy or on YouTube [QGIS-Adding Calculated Field](http://www.youtube.com/watch?feature=player_detailpage&v=2eREApVNAx0)
 

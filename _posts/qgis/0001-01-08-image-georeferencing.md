@@ -16,7 +16,7 @@ This process is called **georeferencing**. To collect reference geographic coord
 
 QGIS allows to georeference images very easily. To do so we will use in this tutorial the following files:
 
-    /dss_course_dataset/img/el_dorado_argentina.jpeg
+    /dss_course_dataset/qgis/img/el_dorado_argentina.jpeg
 
 Accurate GPS coordinates of Ground Control Points are:
 

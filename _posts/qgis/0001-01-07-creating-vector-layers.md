@@ -67,7 +67,15 @@ Note that "grid_Cs.csvt" must be placed in the same folder as "grid_Cs.csv" file
 **So, now let's import it in QGIS!**
 See video tutorial either on your local copy or on YouTube [QGIS-Import CSV file](http://www.youtube.com/watch?feature=player_detailpage&v=nKXQS0Z7-B0)
 
+### 3. Creating a new calculated field in an exisiting vector layer
+In that tutorial, based on the layer we have just created (by importing csv file), we would like to add a new field showing the relative error of cesium measurement. Indeed, in the csv file imported, we had a column showing Cesium 137 measurements, and absolute measurements errors. Here, we would like to add (calculate a new field) showing the relativer error measurement of Cesium 137.
 
+File to be used in that tutorial is:
+
+    /dss_course_dataset/shp/solutions/grid_Cesium.shp
+
+
+See video tutorial either on your local copy or on YouTube [QGIS-Adding Calculated Field](http://www.youtube.com/watch?feature=player_detailpage&v=2eREApVNAx0)
 
 
     

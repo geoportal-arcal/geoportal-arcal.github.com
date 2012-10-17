@@ -111,10 +111,21 @@ What we want know is circles whose size vary based on a field value (here **be**
 
 #### 2.3 Correcting a very frequent error while styling data with proportional circles
 
-Based on what we saw during the "Semiology of Graphics" course, a visualization is effecient when the system of symbols and retinal variables used (color, size, shape, orientation, ...) is closely related to the data to be visualized. In our case we want to have an idea of Beryllium quantity in each measurement point. What the eye sees if the surface of circles drawn first of all. Unfortunately, when we correlate Beryllium quantity with circle diameter or radius, we make a fundamental error: **area of circles is proportional to the square of Beryllium values and it distords data! 
-
+Based on what we saw during the "Semiology of Graphics" course, a visualization is effecient when the system of symbols and retinal variables used (color, size, shape, orientation, ...) is closely related to the data to be visualized. In our case we want to draw circles whose surfaces are proportional to Beryllium concentration in each measurement point. Indeed, the eyes see circles surfaces first of all. As a result, when we simply draw circles whose diameters are proportional to Beryllium concentration, what we see is circles whose areas are proportional to the square of Beryllium value (Circle Surface=PIxRxR). 
 
 ![Proportional circles](http://dl.dropbox.com/u/108352435/course_images/Carto/proportional_circles.png)
 
+As a result, the representation of quantities we want to represent is simply false and misleading unless you mention clearly in a legend that circles areas are proportional to the square of the values you want to represent and not directly to the values 
+
+To correct draw circles whose surface is proportional to the values, you simply need to use the square root of the value.
+
+In our case we will create a new calculated field into the original shapefile then to use it as *marker-width*
+ 
+As a reminder, the original shapefile we want to edit and currently loaded into TileMill is in:
+
+    /dss_course_dataset/tilemill/shp/grid_be.shp
+
+
+See video tutorial either on your local copy or on YouTube [TileMill-Adjusting Circle Proportionality](http://www.youtube.com/watch?feature=player_detailpage&v=o7CVh7gM1RY)
 
 

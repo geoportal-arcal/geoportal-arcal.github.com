@@ -4,6 +4,8 @@ category : Tilemill
 tags : [styling data, quantitative data, point imposition]
 ---
 
+**WORK IN PROGRESS ...**
+
 In this tutorial we will see:
 
 1. How to style **quantitative data** (refer to semiology of graphics tutorial) associated with **point features** (concentration of Cesium or Beryllium in specific location);
@@ -14,7 +16,7 @@ In this tutorial we will see:
 
 4. Add legend to your map.
 
-### Step 1: Opening a shapefile in TileMill
+### 1.  Opening a shapefile in TileMill
 
 File to be used in that tutorial is:
 
@@ -26,8 +28,93 @@ See video tutorial either on your local copy or on YouTube [TileMill-Opening Sha
 
 At this stage, the Shapefile is loaded into TileMill but not styled. To be styled, your layer (identified by an ID -identifier- as shown in the previous video) need to be associated with a style sheet.
 
-### Step 2: Editing the style sheet
+### 2. Editing the style sheet
 
+We want to visualize the concentration of Beryllium in each measured point. Based on the theoretical framework provided by the **Semiology of Graphics**, before embarking on styling, we must answer some questions. 
+
+**Preliminary analysis**: 
+
+* What is the imposition of the geographic feature? **Point**
+* Is data to be shown qualitative or quantitative? **Quantitative**
+* Is data to be shown relative (percentage) or absolute? **Absolute**
+
+As a result we will represent Beryllium concentration by size variation (in our case using circles).
+
+The **Carto** symbolyser we will use is **Marker** (as presented in the previous tutorial).
+
+Let's try a first style definition:
+
+    #grid_be {
+      marker-width: 20;  // defines size of marker in pixels
+      marker-opacity: 0.8;  // defines opacity level here 80%
+      marker-line-color: #888;  // defines marker outline color
+      marker-line-width: 1;  // defines marker outline width
+      marker-line-opacity: 0.7;  // defines marker outline opacity
+      marker-allow-overlap: true;  // defines markers overlap behaviour
+    }
+
+Copy and paste the definition in your TileMill stylesheet editor.
+
+**Output**:You will see a single blue point. We need to zoom to the layer extent and to save this default setting.
+
+####  2.1 Zoom to and save the default layer extent
+
+See video tutorial either on your local copy or on YouTube [TileMill-Defining default zoom level and geographical extent](http://www.youtube.com/watch?feature=player_detailpage&v=dYhGhkIinig)
+
+#### 2.2 Varying circles size based on attribute values
+
+What we have now is a grid of blue points. It does not give any information of Beryllium concentration.
+
+Let's explore additionnal **marker** properties:
+
+    #grid_be {
+      marker-width: 100;  // defines size of marker in pixels
+      marker-fill: #F00; // defines marker color (here Red)
+      marker-opacity: 0.8;  // defines opacity level here 80%
+      marker-line-color: #888;  // defines marker outline color
+      marker-line-width: 1;  // defines marker outline width
+      marker-line-opacity: 0.7;  // defines marker outline opacity
+      marker-allow-overlap: false;  // defines markers overlap behaviour
+    }
+
+**Output**: Big red circles but some of them are hidden because of the *marker-allow-overlap* property set to *false*.
+
+**Action**: Set *marker-allow-overlap* to true and see what happens (all circles are now visible).
+
+What we want know is circles whose size vary based on a field value (here **be**)
+
+     #grid_be {
+       marker-width: [be]; // defines the marker-width based on an attribute value
+       marker-fill: #F00; // defines marker color (here Red)
+       marker-opacity: 0.8;  // defines opacity level here 80%
+       marker-line-color: #888;  // defines marker outline color
+       marker-line-width: 1;  // defines marker outline width
+       marker-line-opacity: 0.7;  // defines marker outline opacity
+       marker-allow-overlap: true;  // defines markers overlap behaviour
+     }
+
+**Output**: Big mess with big circles of varying sizes.
+ 
+**Action**: We need to scale the size of the circle as *marker-width* unit is pixels, to use directly the value of Beryllium concentration values (ranging here from 256 to 875) is not relevant. We need to scale it. Let's divide [be] by 12.
+
+     #grid_be {
+       marker-width: [be]/12; // defines the marker-width based on an attribute value
+       marker-fill: #F00; // defines marker color (here Red)
+       marker-opacity: 0.8;  // defines opacity level here 80%
+       marker-line-color: #888;  // defines marker outline color
+       marker-line-width: 1;  // defines marker outline width
+       marker-line-opacity: 0.7;  // defines marker outline opacity
+       marker-allow-overlap: true;  // defines markers overlap behaviour
+     }
+
+**Output**: We efficiently visualize the different concentration of Beryllium throughout the site. 
+
+#### 2.3 Correcting a very frequent error while styling data with proportional circles
+
+Based on what we saw during the "Semiology of Graphics" course, a visualization is effecient when the system of symbols and retinal variables used (color, size, shape, orientation, ...) is closely related to the data to be visualized. In our case we want to have an idea of Beryllium quantity in each measurement point. What the eye sees if the surface of circles drawn first of all. Unfortunately, when we correlate Beryllium quantity with circle diameter or radius, we make a fundamental error: **area of circles is proportional to the square of Beryllium values and it distords data! 
+
+
+![Proportional circles](http://dl.dropbox.com/u/108352435/course_images/Carto/proportional_circles.png)
 
 
 

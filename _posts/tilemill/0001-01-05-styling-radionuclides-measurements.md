@@ -4,7 +4,6 @@ category : Tilemill
 tags : [styling data, quantitative data, point imposition]
 ---
 
-**WORK IN PROGRESS ...**
 
 In this tutorial we will see:
 
@@ -138,14 +137,43 @@ As a result we will represent Beryllium concentration measurement error by value
 
 We will discretize relative error in 4 classes (*refer basics for further information on discretization and QGIS others for further information on how to find classes limits with QGIS*):
 
-    From 4% to 9.5% 
-    From 9.5% to 14.5%
-    From 14.5% to 17%
-    From 17% to 20%
+    Class 1: From 4% to 9.5% 
+    Class 2: From 9.5% to 14.5%
+    Class 3: From 14.5% to 17%
+    Class 4: From 17% to 20%
 
-Choose a color scheme with [Color Brewer](http://colorbrewer2.org/) (refer to "Semiology of Graphics" for further information)
+Choose a color scheme with [Color Brewer](http://colorbrewer2.org/) (refer to "Semiology of Graphics" for further information):
 
+    Class 1: EFF3FF
+    Class 2: BDD7E7
+    Class 3: 6BAED6
+    Class 4: 2171B5
 
+Now we will defines the *marker-fill* color depending on measurements error values:
 
-    
+    #grid_be {
+      marker-width: [be_sqrt]*2; // defines the marker-width based on an attribute value
+      marker-opacity: 0.8;  // defines opacity level here 80%
+      marker-line-color: #888;  // defines marker outline color
+      marker-line-width: 1;  // defines marker outline width
+      marker-line-opacity: 0.7;  // defines marker outline opacity
+      marker-allow-overlap: true;  // defines markers overlap behaviour
+      [rel_error>=4][rel_error<9.5]  {  // when 4<=rel_error<9.5
+        marker-fill: #EFF3FF;  // defines marker-fill (color)
+      }  
+      [rel_error>=9.5][rel_error<14.5]  {  // when 9.5<=rel_error<15.5
+        marker-fill: #BDD7E7;
+      }
+      [rel_error>=14.5][rel_error<17]  {  // etc
+        marker-fill: #6BAED6;
+      }
+      [rel_error>=17][rel_error<=20]  { // note that for each selected case are surrounded by curly brackets.
+        marker-fill: #2171B5;
+      }
+    }
+
+Copy and paste these declarations in your TileMill style sheet editor and you should see proportional circles with colors related to the relative level of measurements errors.   
+
+We will see in a next tutorial how to add interactivity and legends.
+
 

@@ -12,10 +12,6 @@ In this tutorial we will see:
 
 2. How to visualize in parallel the **relative error of measurements**;
 
-3. How to add **interactivity** in order to visualize Beryllium **concentration profiles** (concentration at different depth) while hover on features;
-
-4. Add legend to your map.
-
 ### 1.  Opening a shapefile in TileMill
 
 File to be used in that tutorial is:
@@ -117,7 +113,7 @@ Based on what we saw during the "Semiology of Graphics" course, a visualization 
 
 As a result, the representation of quantities we want to represent is simply false and misleading unless you mention clearly in a legend that circles areas are proportional to the square of the values you want to represent and not directly to the values 
 
-To correct draw circles whose surface is proportional to the values, you simply need to use the square root of the value.
+To correct circles whose surface is proportional to the values, you simply need to use the square root of the value instead of the value directly.
 
 In our case we will create a new calculated field into the original shapefile then to use it as *marker-width*
  
@@ -128,4 +124,28 @@ As a reminder, the original shapefile we want to edit and currently loaded into 
 
 See video tutorial either on your local copy or on YouTube [TileMill-Adjusting Circle Proportionality](http://www.youtube.com/watch?feature=player_detailpage&v=o7CVh7gM1RY)
 
+#### 2.4 Styling relative error of Beryllium measurements.
+
+It's particularly relevant to visualize simultaneously the concentration of radionuclides and the relative error or measurements. We will see how to achieve this very easily.
+
+**Preliminary analysis**: 
+
+* What is the imposition of the geographic feature? **Point**
+* Is data to be shown qualitative or quantitative? **Quantitative**
+* Is data to be shown relative (percentage) or absolute? **Relative**
+
+As a result we will represent Beryllium concentration measurement error by value variation (refer to 'Semiology of Graphics' tutorial).
+
+We will discretize relative error in 4 classes (*refer basics for further information on discretization and QGIS others for further information on how to find classes limits with QGIS*):
+
+    From 4% to 9.5% 
+    From 9.5% to 14.5%
+    From 14.5% to 17%
+    From 17% to 20%
+
+Choose a color scheme with [Color Brewer](http://colorbrewer2.org/) (refer to "Semiology of Graphics" for further information)
+
+
+
+    
 

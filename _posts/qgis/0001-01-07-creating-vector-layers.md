@@ -76,7 +76,14 @@ File to be used in that tutorial is:
 
 See video tutorial either on your local copy or on YouTube [QGIS-Adding Calculated Field](http://www.youtube.com/watch?feature=player_detailpage&v=2eREApVNAx0)
 
-
     
+### 4. Creating a new vector layer through digitizing
+
+Digitizing is the manual or semi-automatic process allowing to create vector layers from a raster layer. In our case, we will use the satellite image georeferenced in next tutorial (see image georeferencing) and create a new vector layer showing landuse.
+
+The process involves visually interpreting the limit of each piece of land and to draw (digitize) it through QGIS digitizing toolbox.
+
+See video tutorial either on your local copy or on YouTube [QGIS-Digitizing](http://www.youtube.com/watch?feature=player_detailpage&v=vinGD2Jlka8)
+
 
 

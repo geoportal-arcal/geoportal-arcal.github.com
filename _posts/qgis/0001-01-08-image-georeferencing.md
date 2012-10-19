@@ -27,6 +27,6 @@ Accurate GPS coordinates of Ground Control Points are:
 
 See video tutorial either on your local copy or on YouTube [QGIS-Georeferencing](http://www.youtube.com/watch?feature=player_detailpage&v=oRoAs0v93e8)
 
-
+Note that the output format of our georeferenced raster file is 'tiff'. This format also known as 'geotiff' is a very common raster file format allowing to embed in a single file the raster image and associated georeferencing information.
  
 

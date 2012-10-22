@@ -15,7 +15,7 @@ In this tutorial we will see:
 
 File to be used in that tutorial is:
 
-    /dss_course_dataset/tilemill/shp/grid_Be.shp
+    /dss_course_dataset/tilemill/1-styling_radionuclides/grid_Be.shp
 
 See video tutorial either on your local copy or on YouTube [TileMill-Opening Shapefile](http://www.youtube.com/watch?feature=player_detailpage&v=hjQ-FfEcj_Y)
 
@@ -174,6 +174,6 @@ Now we will defines the *marker-fill* color depending on measurements error valu
 
 Copy and paste these declarations in your TileMill style sheet editor and you should see proportional circles with colors related to the relative level of measurements errors.   
 
-We will see in a next tutorial how to add interactivity and legends.
+We will see in a next tutorial how to add interactivity (tooltips) and legends.
 
 

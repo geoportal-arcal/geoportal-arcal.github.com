@@ -78,7 +78,7 @@ The principle is very simple: based on the type of features (point, line, polygo
 * **marker-line-width** defines the width of the outline of the circle
 * **marker-allow-overlap** defines the behaviour of circles who are partially covering each other (do we hide one of them or not). When set to 'true', markers can be juxtaposed.
 * the double slash symbol // specify that the following property is unactivated (commented)
-* the properties surrounded by /* blabalbalb */ are unactivated as well (commented). The difference is that this style of comment allows to comment several lines at once.
+* the properties surrounded by /\* blabalbalb \*/ are unactivated as well (commented). The difference is that this style of comment allows to comment several lines at once.
 
 ### 3.Other resources
 As indicated in the TileMill tutorial describing the user interface, you can access help on Carto style sheet language within the editor window at any time. There is a full description of all symbolizer properties.

@@ -18,7 +18,7 @@ The TileMill user interface offers an interactive editor tool allowing to design
 
 See video tutorial either on your local copy or on YouTube [TileMill-Legends_And_Tooltips](http://www.youtube.com/watch?feature=player_detailpage&v=ikZT52OLL3s)
 
-The output of legend and tooltips as those shown in the video is still very basic, however this edition tool becomes very powerfull when we incorporate HTML, CSS and Google Image charts.
+The output of legend and tooltips as those shown in the video is still very basic, however this editing tool becomes very powerfull when we incorporate HTML, CSS and Google Image charts.
 
 ### 2. Legend with HTML and CSS
 
@@ -34,7 +34,7 @@ Very interesting resources to study HTML and CSS are:
 * [http://www.codecademy.com/tracks/htmlcss](http://www.codecademy.com/tracks/htmlcss)
 
 
-Copy and paste the following HTML and CSS code into the legend edition area in TileMill:
+Copy and paste the following HTML and CSS code into the legend editing area in TileMill:
 
     <div class='my-legend'>
     <div class='legend-title'>BERYLLIUM 7 CONCENTRATION</div>
@@ -119,7 +119,7 @@ Copy and paste the following HTML and CSS code into the legend edition area in T
 
 The principle is the same, to style the tooltips, you need to create an HTML part, embedding your title, name of fields, fields, ... and then style it with CSS. 
 
-Copy and paste the following HTML & CSS code into the Teaser edition area into TileMill. 
+Copy and paste the following HTML & CSS code into the Teaser editing area into TileMill. 
 
     <!-- TOOLTIP TITLE -->
    <div>
@@ -223,7 +223,7 @@ The finalize tooltip code is available in:
 
     /dss_course_dataset/tilemill/2-legends_tooltips/code_tooltip.txt
 
-Copy and paste it to your TileMill project in the interactivity editor Teaser edition area.
+Copy and paste it to your TileMill project in the interactivity editor Teaser editing area.
 
 The new version of the tooltip allows to visualize Beryllium concentration values and vertical profiles.
 

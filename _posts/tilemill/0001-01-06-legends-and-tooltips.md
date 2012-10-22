@@ -120,7 +120,7 @@ The principle is the same, to style the tooltips, you need to create an HTML par
 Copy and paste the following HTML & CSS code into the Teaser edition area into TileMill. 
 
     <!-- TOOLTIP TITLE -->
-    <div>
+   <div>
       <span class='tooltip-title'>BERYLLIUM 7 CONCENTRATION</span>
     </div>
 
@@ -140,13 +140,7 @@ Copy and paste the following HTML & CSS code into the Teaser edition area into T
       <span> Min: FIELD 3</span>
     </div>
     <div class='field-value'>
-      <span> Error: FIELD 4</span>
-    </div>
-    <div class='separator'></div>
-
-    <!-- TOOLTIP SECTION -->
-    <div>
-      <span class='tooltip-section'>VERTICAL PROFILE (depth in mm)</span>
+      <span> Error: FIELD 4 %</span>
     </div>
 
 
@@ -180,11 +174,60 @@ Copy and paste the following HTML & CSS code into the Teaser edition area into T
       }
     </style>
 
-Replace **FIELD 1** by \{\{\{be_max\}\}\}
+Replace:
+* **FIELD 1** by \{\{\{be_max\}\}\}
+* **FIELD 2** by \{\{\{be\}\}\}
+* **FIELD 3** by \{\{\{be_min\}\}\}
+* **FIELD 4** by \{\{\{rel_error\}\}\}
 
-Replace **FIELD 2** by \{\{\{be\}\}\}
+How you can see the syntax to use to insert shapefile field values is the name of the field surrounded by three curly brackets.
 
-Replace **FIELD 3** by \{\{\{be_min\}\}\}
+The HTML and CSS codes shown above, simply defines font styles (bold, italic, normal), sizes, margins, color, background color, ... Study it and customize it as you want.
 
-Replace **FIELD 4** by \{\{\{rel_error\}\}\}
+### 4. Embedding Google Chart images
+
+Google provides a very interesting online services allowing to embed interactive charts into your HTML code and in our case into TileMill tooltips.
+
+The principle is the following:
+
+**Step 1**: Design on line the type of chart you are interested in, style it as shown here: [https://developers.google.com/chart/image/docs/chart_wizard](https://developers.google.com/chart/image/docs/chart_wizard)
+
+**Step2**: Copy the automatically generated html code that you will incorporate in your tooltips html code, in our case:
+
+
+    <img src="http://chart.googleapis.com/chart?
+    chf=bg,s,00000000&
+    chxl=0:|0|50|100|150|200|250|1:|6-8|4-6|2-4|0-2&
+    chxr=0,0,250&
+    chxs=0,FFFFFF,11.5,0,t,FF0000|1,FFFFFF,11.5,0,l,FFFFFF&
+    chxt=t,y&
+    chbh=a&
+    chs=230x125&
+    cht=bhg&
+    chco=444444&
+    chds=0,250&
+    chd=t:FIELD1,FIELD2,FIELD3,FIELD4&
+    chm=D,FF9900,0,-1,1.5" width="240" height="125" alt="" />
+
+
+ Replace:
+* **FIELD 1** by \{\{\{be_1\}\}\}
+* **FIELD 2** by \{\{\{be_2\}\}\}
+* **FIELD 3** by \{\{\{be_3\}\}\}
+* **FIELD 4** by \{\{\{be_4\}\}\}
+
+
+The finalize tooltip code is available in:
+
+    /dss_course_dataset/tilemill/2-legends_tooltips/code_tooltip.txt
+
+Copy and paste it to your TileMill project in the interactivity editor Teaser edition area.
+
+The new version of the tooltip allows to visualize Beryllium concentration values and vertical profiles.
+
+It's worth studying the meaning of each individual google chart images parameters (chf, chd, ...) as it offers a wide range of interesting and flexible configuration. It will allow you to show interactively in an efficient way a wide range of information.
+
+Google chart parameters description is available here [https://developers.google.com/chart/image/docs/chart_params](https://developers.google.com/chart/image/docs/chart_params). Test different parameter values and see how it changes the graph. 
+
+
 

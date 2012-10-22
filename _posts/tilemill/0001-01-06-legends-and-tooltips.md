@@ -27,6 +27,8 @@ The process is documented here as well: [http://mapbox.com/tilemill/docs/guides/
 To understand the following code you need to be familiar with HTML and CSS.
 Very interesting resources to study HTML and CSS are:
 
+* [http://es.html.net/tutorials/](http://es.html.net/tutorials/)
+
 * [http://www.w3schools.com](http://www.w3schools.com/)
 
 * [http://www.codecademy.com/tracks/htmlcss](http://www.codecademy.com/tracks/htmlcss)

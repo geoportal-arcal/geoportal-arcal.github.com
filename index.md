@@ -19,6 +19,20 @@ This course aims at developing project participants capacities on geospatial inf
 
 ## Agenda
 
+Training hours schedule:
+
+**MORNING**
+* 8h00-10h00: Course
+* 10h00-10h30: *Coffee break*
+* 10h30-13h00: Course
+* 10h00-10h30: *Lunch*
+
+**AFTERNOON**
+* 14h30-16h00: Course
+* 16h00-16h30: *Coffee break*
+* 16h30-18h00: Course
+
+
 <br/>
 <table border='1' bordercolor='#999'>
    <tr>
@@ -42,23 +56,24 @@ This course aims at developing project participants capacities on geospatial inf
   </tr>
   <tr>
        <td><b>Morning</b></td>
-       <td> <ul><li>Introduction</li><li>GIS fund.</li><li>QGIS</li></ul> </td>
-       <td> <ul><li>QGIS</li></ul> </td>
-       <td> <ul><li>TileMill(mss, tooltips, legends)</li><li>Basics HTML and CSS</li></ul></td>
-       <td>  <ul><li>TileMill with participants data</li><li>MapBox</li></ul></td>
-       <td>  <ul><li>GoogleEarth</li><li>Keyhole Markup Language (KML)</li></ul></td>
+       <td> <ul><li>Course inauguration speech</li><li>Course presentation and proceedings</li><li>GIS fundamentals</li></ul></td>
+       <td> <ul><li>QGIS (Quantum GIS)</li></ul> </td>
+       <td> <ul><li>QGIS questions</li><li>QGIS/GRASS spatial analysis</li></ul></td>
+       <td>  <ul><li>Semiology of graphics</li><li>TileMill</li></ul></td>
+       <td>  <ul><li>TileMill</li><li>MapBox</li></ul></td>
   </tr>
   <tr>
        <td><b>Afternoon</b></td>
-       <td> <ul><li>QGIS</li></ul> </td>
+       <td bgcolor='#AAA'> <ul><li>Video camera training</li></ul> </td>
        <td> <ul><li>QGIS with participants data (preparing, cleaning geo-data)</li></ul></td>
-       <td> <ul><li>Semiology of graphics (Graphical representation)</li><li>TileMill</li></ul> </td>
-       <td>  <ul><li>Debriefing, questions and feedback on QGIS and TileMill</li></ul></td>
-       <td>  <ul><li>KML</li></ul></td>
+       <td> <ul><li>TileMill</li><li>Basic HTML, CSS</li></ul> </td>
+       <td>  <ul><li>TileMill with participants data</li></ul></td>
+       <td>  <ul><li>Consitution of Groups of Interest (GI)</li><li>GI activities with rotating support of trainers</li></ul></td>
   </tr>
 </table>
 
 <br/>
+
 <table border='1' bordercolor='#999'>
    <tr>
        <td colspan='6' align='center' bgcolor="#000"><span style='color: #FFF; font-weight:bold'>WEEK 2</span> </td>
@@ -81,24 +96,31 @@ This course aims at developing project participants capacities on geospatial inf
   </tr>
   <tr>
        <td><b>Morning</b></td>
-       <td> <ul><li>KML with participants data</li></ul> </td>
-       <td> <ul><li>KML advanced (Python scripting)</li><li>Assessments of progress and needs of participants</li><li>Consitution of Groups of Interest (GI)</li></ul> </td>
-       <td> <ul><li>Groups of Interest activities with rotating support of trainers</li></ul></td>
-       <td bgcolor='#AAA'>  <ul><li>Video training</li></ul></td>
+       <td> <ul><li>Google Earth</li><li>Keyhole Markup Language</li></ul> </td>
+       <td> <ul><li>KML with participants data</li></ul></td>
+       <td> <ul><li>KML advanced (Python scripting)</li><li>Groups of Interest activities with rotating support of trainers</li></ul></td>
+       <td>  <ul><li>Feeding the RLA 5/051 Decision Support System with Data</li></ul></td>
        <td bgcolor='#AAA'>  <ul><li>ARCAL RLA 5/051 members progress reports</li></ul></td>
   </tr>
   <tr>
        <td><b>Afternoon</b></td>
-       <td> <ul><li>Posting maps online with DropBox, Prose and ARCAL RLA5/051 Decision Support System</li></ul> </td>
-       <td> <ul><li>Groups of Interest activities with rotating support of trainers and most advanced participants</li></ul></td>
+       <td> <ul><li>KML</li></ul> </td>
+       <td> <ul><li>Posting maps on line with DropBox, Prose and ARCAL RLA 5/051 Decision Support System</li></ul></td>
+       <td> <ul><li>Groups of Interest activities with rotating support of trainers</li></ul></td>
        <td> <ul><li>Feeding the ARCAL RLA 5/051 Decision Support System with participants data</li></ul> </td>
-       <td bgcolor='#AAA'>  <ul><li>Video training</li></ul></td>
        <td bgcolor='#AAA'>  <ul><li>ARCAL RLA 5/051 members progress reports</li></ul></td>
   </tr>
 </table>
+</br>
 
+**Notes:**  
 
+1. The video camera training will be given the first day of the training. The idea is to give participants the opportunity to practice throughout the two weeks and to ask questions when required to the trainer.
 
+**Special events:**
 
-
+* The 14th evening: Cena an Casa Pena
+* The 17th: Touristic tour in Guanajuato and Parque bicentenario
+* The 20th evening: Charreada mexicana
+* The 23th evening: Cena/clausura
 

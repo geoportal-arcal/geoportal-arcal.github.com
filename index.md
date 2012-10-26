@@ -116,6 +116,7 @@ Training hours schedule:
 **Notes:**  
 
 1. The video camera training will be given the first day of the training. The idea is to give participants the opportunity to practice throughout the two weeks and to ask questions when required to the trainer.
+2. Trainers will be available after the training sessions for ad hoc trainings, questions, ...
 
 **Special events:**
 

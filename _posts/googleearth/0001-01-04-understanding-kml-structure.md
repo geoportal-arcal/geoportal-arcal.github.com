@@ -252,4 +252,29 @@ If you copy this code into notepad++, save it as KML and open it in Google Earth
 
 #### 6.1 Balloons formatted with HTML
 
+Hopefully, it is possible to embed richer content than a simple text line. Actually, you can embed any HTML content styled with CSS.
+
+The following example shows how to embed HTML/CSS, images and video into a KML balloon.
+
+You can see an example of such HTML/CSS content in:
+
+    dss_course_dataset/google_earth/2-kml_structure/my_first_html_balloon_video.html
+
+and embedded in an KML file:
+
+    dss_course_dataset/google_earth/2-kml_structure/kml_balloon_html_rich_content.kml
+
+**Few comments:**
+
+1. you will see that the Html/CSS code is surrounded by CDATA tags. It specifies that following code must not be interpreted as XML (for instance < and > symbols we might use in html and css). 
+
+2. the snippet tag allows to specify the text we want to appear under the feature in the "Places" left panel.
+
+
+##### 6.1.1 How to embed youtube video into KML balloons?
+
+See video tutorial either on your local copy or on YouTube [GoogleEarth-Embedding YouTube Video](http://www.youtube.com/watch?feature=player_detailpage&v=dwlY7ZlDDA4)
+
+
+
 

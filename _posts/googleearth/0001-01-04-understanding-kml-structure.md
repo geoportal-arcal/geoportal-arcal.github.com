@@ -276,5 +276,30 @@ and embedded in an KML file:
 See video tutorial either on your local copy or on YouTube [GoogleEarth-Embedding YouTube Video](http://www.youtube.com/watch?feature=player_detailpage&v=dwlY7ZlDDA4)
 
 
+##### 6.1.2 Using shared balloon styles
 
+You might have noticed than html code to be embedded into balloons needs to be replicated in any single placemark. This approach is quite unefficient.
+Hopefully, as in the case of features styling, it is possible to define a balloon template at "document tag level"" and to reference it within placemarks.
 
+You will find an example of such shared balloon style in the following KML file:
+
+    dss_course_dataset/google_earth/2-kml_structure/kml_shared_balloon_style.kml
+
+**Some remarks:**
+
+1. shared balloon style definition allows to define backround and text color for all balloons at once;
+2. the html and css code must be but with the "text" tag. 
+
+### 7. Embedding additional attibute data
+
+By default, attribute information associated to each placemark is limited to information embedded in the "name" tag and the "description" tag within the "Placemark" tag.
+
+        <Placemark>
+          <name>my first placemark</name>
+          <description>This is the information displayed in my balloons</description>
+          <Point>
+            <coordinates>-66.09993326298255,-33.56312777383666,0</coordinates> 
+          </Point>
+        </Placemark>
+ 
+We will see in this chapter how to add new attribute information and embed it into balloons to enhance interactivity.

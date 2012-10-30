@@ -15,7 +15,7 @@ In this tutorial we will see:
 
 File to be used in that tutorial is:
 
-    /dss_course_dataset/tilemill/1-styling_radionuclides/grid_Be.shp
+    /dss_course_dataset/tilemill/1-points_quantitative/grid_Be.shp
 
 See video tutorial either on your local copy or on YouTube [TileMill-Opening Shapefile](http://www.youtube.com/watch?feature=player_detailpage&v=hjQ-FfEcj_Y)
 
@@ -118,7 +118,7 @@ In our case we will create a new calculated field into the original shapefile th
  
 As a reminder, the original shapefile we want to edit and currently loaded into TileMill is in:
 
-    /dss_course_dataset/tilemill/shp/grid_be.shp
+    /dss_course_dataset/tilemill/1-points_quantitative/grid_be.shp
 
 
 See video tutorial either on your local copy or on YouTube [TileMill-Adjusting Circle Proportionality](http://www.youtube.com/watch?feature=player_detailpage&v=o7CVh7gM1RY)
@@ -177,3 +177,23 @@ Copy and paste these declarations in your TileMill style sheet editor and you sh
 We will see in a next tutorial how to add interactivity (tooltips) and legends.
 
 
+#### 2.5 Adapting styling based on zoom levels
+
+We worked so far at zoom level 17 (zoom level best fitting the layer extent). However, it might be interesting to visualize this layer at other zoom level. In our example if you unzoom (switching to zoom level 16), the scale of proportional circle will not be adapted anymore (too big).	
+
+Hopefully, the Carto language allows to define define style selectively based on zoom level as shown below:
+
+    #grid_be {
+      [zoom > 15] {
+        marker-width: [be]/22;
+      }
+      [zoom > 16] {
+        marker-width: [be]/12;
+      }
+      marker-opacity: 0.95;  // defines opacity level here 80%
+      marker-line-color: #222;  // defines marker outline color
+      marker-line-width: 1;  // defines marker outline width
+      marker-line-opacity: 0.4;  // defines marker outline opacity
+      marker-allow-overlap: true;  // defines markers overlap behaviour
+      marker-fill: #111;
+    }

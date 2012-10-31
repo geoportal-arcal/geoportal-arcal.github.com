@@ -12,7 +12,7 @@ In these series of tutorials we will see:
 
 1. How to create a KML file with the GoogleEarth interface
 2. How to create a KML file from scratch with a text editor
-3. How to create a KML file with "shp2kml" software 
+3. How to embed rich content within balloons and style efficiently KML layers
 4. How to create or edit KML file with Python programming language -ADVANCED-
 
 More important, we will see the strenghs and weaknesses of GoogleEarth and how to use it in a complementary way to TileMill. 

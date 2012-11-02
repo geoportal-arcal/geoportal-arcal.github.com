@@ -181,8 +181,12 @@ Several online website allows to find your are of interest quickly. For instance
 
 Irapuato Longitude, Latitude is: (-101.35, 20.67), try to identify the corresponding UTM zone.
 
+**IMPORTANT**: On the globe (when no map projection is used) the coordinate sytem use pairs of longitude and latitude (spherical coordinates). As soon as we use a map projection distances and positions are shown in meters.
+
 
 ### 4. Spatial Reference System (SRS) codes
+
+Geographic coordinate systems (the choice of the ellipsoid (semi-major, semi-minor axis and origin) and map projections can be collectively called **Spatial Reference System**.
  
 There are hundreds of Geographic coordinate systems and cartographic/map projections, the EPSG (European Petroleum Survey Group) today absorbed by the International Association of Oil & Gas Producers associated 'almost' unique idendifiers to any projections in order to ease their use and identification.
 

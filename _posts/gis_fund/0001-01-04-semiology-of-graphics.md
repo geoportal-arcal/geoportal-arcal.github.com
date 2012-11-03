@@ -8,7 +8,7 @@ tags : [Semiology of graphics]
 
 By Semiology of Graphics, we refer to the theoretical framework describing the graphic means and techniques we can use to represent in an effective way the information to be shown on graphical charts and maps. The purpose of a graphical chart or map is to offer a synoptic view of a phenomenon. We want to perceive at a glance the structure of the data (extreme values, spatial distribution, relationships, ...) usually stored in tables. 
 
-As a first example, compare two different views of the same information:
+To illustrate this point, compare two different views of the same information:
 
     latitude	longitude	Be
     -33.56367896	-66.0919045	498.4863237
@@ -61,7 +61,20 @@ Level of organization of components can be:
 
 
 
-#### 1.2 Retinian variables
+#### 1.2 Retinal variables
+
+Experimental psychology defines depth perception (the visual ability to perceive the world in three dimensions and the distance of an object) as the result of multiple factors:
+
+* binocular vision, within a limit of several meters
+* the apparent movement of objects when the observer moves
+* a decrease in the size of a known object
+* a decrease in the values of a known contrast
+* a reduction in the known texture of an object
+* a decrease in the saturation of the colors of known objects
+* deformations of orientation and shape (perspective)
+
+All these variations, with the exception of the first two, are at the disposal of the graphic designer, who can associate them with components variation according to certain rules.
+
 
 #### 1.3 The notion of efficiency
 

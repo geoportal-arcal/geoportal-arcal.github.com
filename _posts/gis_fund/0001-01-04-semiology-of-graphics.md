@@ -114,8 +114,41 @@ Properties of visual variables can be:
 
 ![visual variable size](http://dl.dropbox.com/u/108352435/course_images/semiology/vv_size.jpg)
 
+</br>
+* **Size variation over various shape and implantations:**
+![visual variable size](http://dl.dropbox.com/u/108352435/course_images/semiology/vv_size_example1.jpg)
+
+</br>
+
+* **Size variation can be achieved through: height of a column, area of a sign, number of equal signs.
+
+![visual variable size](http://dl.dropbox.com/u/108352435/course_images/semiology/vv_size_example2.jpg)
+
+</br>
+* **Size variation on three implatations: points, lines and areas**
+![visual variable size](http://dl.dropbox.com/u/108352435/course_images/semiology/vv_size_example3.jpg)
+
+
+</br>
 
 #### 2.3 Visual variable: Shape
+</br>
+![visual variable shape](http://dl.dropbox.com/u/108352435/course_images/semiology/vv_shape.jpg)
+
+</br>
+
+* **Variation in shape at constant size is completely unefficient in rendering quantitative components. You need to refer constantly to the legend to have an idea of quantities.** 
+![visual variable shape](http://dl.dropbox.com/u/108352435/course_images/semiology/vv_shape_example1.jpg)
+
+</br>
+
+* **Shape variation on three implatations: points, lines and areas**
+![visual variable shape](http://dl.dropbox.com/u/108352435/course_images/semiology/vv_shape_example2.jpg)
+
+</br>
+* **When the density of marks increases, selectivity and associativity decrease radically.**
+
+![visual variable shape](http://dl.dropbox.com/u/108352435/course_images/semiology/vv_shape_example3.jpg)
 
 #### 2.4 Visual variable: Value
 

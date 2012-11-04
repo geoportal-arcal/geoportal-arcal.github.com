@@ -58,24 +58,76 @@ Level of organization of components can be:
 
 * **quantitative**: a series of numbers is quantitative when its object is to specify the variation in distance among the categories.
 
+#### 1.2 Visual/retinal variables
+
+To show, to portray these components on graphs or maps, the graphic designer has at its disposal essentially **marks** (for us mark is a set of pixels). The purpose of the semiology of graphics is to study the correspondence between graphic **marks** and **components** based on their respective properties.
+
+How can we vary marks?
+
+* by where we place them;
+
+* by how we place them (**implantation**: point, line, area)
+
+* by their visual characteristics (**retinal variables**)
+
+Marks can vary in:
+
+* **position**
+
+* **size**
+
+* **value**
+
+* **texture**
+
+* **color**
+
+* **orientation**
+
+* **shape** 
+
+![retinal variables](http://dl.dropbox.com/u/108352435/course_images/semiology/retinal_variables.jpg)
+
+### 2. Properties of visual variables
+
+We will go through each visual variables and study their characteristics (**level of organization**, **perceptual properties**).
+
+Properties of visual variables can be:
+
+* **Selective**: is a change in this variable enough to allow us to select it from a group?
+
+* **Associative**: is a change in this variable enough to allow us to perceive them as a group? 
+
+* **Quantitative**: is there a numerical reading obtainable from changes in this variable?
+
+* **Order**: are changes in this variable perceived as ordered?
+
+* **Length**: across how many changes in this variable are distinctions perceptible? 
+
+#### 2.1 Visual variable: Position
+</br>
+
+![visual variable position](http://dl.dropbox.com/u/108352435/course_images/semiology/vv_position.jpg)
+
+#### 2.2 Visual variable: Size
+</br>
+
+![visual variable size](http://dl.dropbox.com/u/108352435/course_images/semiology/vv_size.jpg)
+
+
+#### 2.3 Visual variable: Shape
+
+#### 2.4 Visual variable: Value
+
+#### 2.5 Visual variable: Colour
+
+#### 2.6 Visual variable: Orientation
+
+#### 2.7 Visual variable: Texture
 
 
 
-#### 1.2 Retinal variables
-
-Experimental psychology defines depth perception (the visual ability to perceive the world in three dimensions and the distance of an object) as the result of multiple factors:
-
-* binocular vision, within a limit of several meters
-* the apparent movement of objects when the observer moves
-* a decrease in the size of a known object
-* a decrease in the values of a known contrast
-* a reduction in the known texture of an object
-* a decrease in the saturation of the colors of known objects
-* deformations of orientation and shape (perspective)
-
-All these variations, with the exception of the first two, are at the disposal of the graphic designer, who can associate them with components variation according to certain rules.
 
 
-#### 1.3 The notion of efficiency
+### 3. The notion of efficiency
 
-### 2. Case studies

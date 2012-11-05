@@ -19,4 +19,6 @@ This tutorial is downloadable [here (tutorial)](ftp://ftp.remotesensing.org/qgis
 
 #### 4. This blog [http://qgis.spatialthoughts.com](http://qgis.spatialthoughts.com) provides many interesting QGIS tutorials.
 
+#### 5. [Repository of QGIS tutorials](http://hub.qgis.org/wiki/quantum-gis/Users_Corner#How-to-use-QGIS)
 
+#### 6. [Scripting QGIS use with Python](http://www.qgis.org/pyqgis-cookbook/)

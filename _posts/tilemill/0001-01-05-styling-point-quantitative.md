@@ -1,7 +1,7 @@
 ---
 layout: post
 category : Tilemill
-tags : [styling data, quantitative data, point imposition]
+tags : [styling data, quantitative data, point implantation]
 ---
 
 
@@ -29,13 +29,13 @@ We want to visualize the concentration of Beryllium in each measured point. Base
 
 **Preliminary analysis**: 
 
-* What is the imposition of the geographic feature? **Point**
+* What is the implantation of the geographic feature? **Point**
 * Is data to be shown qualitative or quantitative? **Quantitative**
 * Is data to be shown relative (percentage) or absolute? **Absolute**
 
 As a result we will represent Beryllium concentration by size variation (in our case using circles).
 
-The **Carto** symbolyser we will use is **Marker** (as presented in the previous tutorial).
+The **Carto** symboliser we will use is **Marker** (as presented in the previous tutorial).
 
 Let's try a first style definition:
 
@@ -129,7 +129,7 @@ It's particularly relevant to visualize simultaneously the concentration of radi
 
 **Preliminary analysis**: 
 
-* What is the imposition of the geographic feature? **Point**
+* What is the implantation of the geographic feature? **Point**
 * Is data to be shown qualitative or quantitative? **Quantitative**
 * Is data to be shown relative (percentage) or absolute? **Relative**
 

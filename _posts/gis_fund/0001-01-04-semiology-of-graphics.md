@@ -152,6 +152,30 @@ Properties of visual variables can be:
 
 #### 2.4 Visual variable: Value
 
+</br>
+![visual variable value](http://dl.dropbox.com/u/108352435/course_images/semiology/vv_value.jpg)
+
+</br>
+* **Value variation is achieved through various degrees of white and black**
+![visual variable value](http://dl.dropbox.com/u/108352435/course_images/semiology/vv_value_example1.jpg)
+
+</br>
+* **Value variation on three implatations: points, lines and areas**
+![visual variable value](http://dl.dropbox.com/u/108352435/course_images/semiology/vv_value_example2.jpg)
+
+</br>
+* **Value variation is ordered and cannot be re-ordered**
+![visual variable value](http://dl.dropbox.com/u/108352435/course_images/semiology/vv_value_example3.jpg)
+
+</br>
+* **Value variation is not quantitative (here oil consumption in Europe base unit 1 million tons)
+![visual variable value](http://dl.dropbox.com/u/108352435/course_images/semiology/vv_value_example4.jpg)
+
+</br>
+* **Value intensity can be mis-read as density when areas vary (here population of Paris)
+![visual variable value](http://dl.dropbox.com/u/108352435/course_images/semiology/vv_value_example5.jpg)
+
+</br>
 #### 2.5 Visual variable: Colour
 
 #### 2.6 Visual variable: Orientation

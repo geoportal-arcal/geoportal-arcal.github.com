@@ -93,7 +93,7 @@ See video tutorial either on your local copy or on YouTube [QGIS-Digitizing](htt
 
 ### 5. Editing attributes name and type
 
-Be sure to have the "Table manager" installed and DBF manager downloaded on your computer.
+Be sure to have the "Table manager" plugin installed and DBF manager downloaded on your computer.
 
 File to be used in that tutorial is:
 

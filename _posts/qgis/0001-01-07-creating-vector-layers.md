@@ -83,7 +83,47 @@ Digitizing is the manual or semi-automatic process allowing to create vector lay
 
 The process involves visually interpreting the limit of each piece of land and to draw (digitize) it through QGIS digitizing toolbox.
 
+File to be used in that tutorial is:
+
+    /dss_course_dataset/qgis/3-creating_vector_layers/el_dorado_argentina.tif
+
+
 See video tutorial either on your local copy or on YouTube [QGIS-Digitizing](http://www.youtube.com/watch?feature=player_detailpage&v=vinGD2Jlka8)
 
+
+### 5. Editing attributes name and type
+
+Be sure to have the "Table manager" installed and DBF manager downloaded on your computer.
+
+File to be used in that tutorial is:
+
+    /dss_course_dataset/qgis/3-creating_vector_layers/measurements.shp
+
+
+### 5.1 Through the "Layer Properties/Fields tab"
+
+See video tutorial either on your local copy or on YouTube [QGIS-Edit Attributes through Layer Properties](http://www.youtube.com/watch?feature=player_detailpage&v=YyzBt97Sibo)
+
+### 5.2 Rename, change order, clone through Table Manager plugin
+
+Open "Table Manager plugin" in "Plugins" menu. You can move up, down, delete, rename, add, clone fields.
+
+### 5.3 Through DBFExplorer
+
+".dbf" file format was used by **dBase** ([one of the first Database Management System for microComputers](http://en.wikipedia.org/wiki/DBase)). This file format is still used by many programs including by ESRI **shapefile** GIS format to store attribute data.
+
+**DBFExplorer** is a usefull program allowing to rapidly edit your .dbf files (please refer to **shapefile** tutorial).
+
+**Note that the shapefile to be edited needs to be closed from QGIS before being edited with DBFExlplorer.**
+
+See video tutorial either on your local copy or on YouTube [QGIS-Edit Attributes through DBFExplorer](http://www.youtube.com/watch?feature=player_detailpage&v=SuIrbh3iwmY)
+
+
+
+
+
+ 
+
+Double click on "DBFExplorer.exe", 
 
 

@@ -168,15 +168,45 @@ Properties of visual variables can be:
 ![visual variable value](http://dl.dropbox.com/u/108352435/course_images/semiology/vv_value_example3.jpg)
 
 </br>
-* **Value variation is not quantitative (here oil consumption in Europe base unit 1 million tons)
+* **Value variation is not quantitative (here oil consumption in Europe base unit 1 million tons)**
 ![visual variable value](http://dl.dropbox.com/u/108352435/course_images/semiology/vv_value_example4.jpg)
 
 </br>
-* **Value intensity can be mis-read as density when areas vary (here population of Paris)
+* **Value intensity can be mis-read as density when areas vary (here population of Paris)**
 ![visual variable value](http://dl.dropbox.com/u/108352435/course_images/semiology/vv_value_example5.jpg)
 
 </br>
 #### 2.5 Visual variable: Colour
+
+</br>
+![visual variable colour](http://dl.dropbox.com/u/108352435/course_images/semiology/vv_colour.jpg)
+
+</br>
+* **Very good selectivity and associativity**
+![visual variable color example1](http://dl.dropbox.com/u/108352435/course_images/semiology/vv_colour_example1.jpg)
+
+</br>
+* **Not efficient when used to visualize quantitative data. Need to constantly refer to legend**
+![visual variable color example2](http://dl.dropbox.com/u/108352435/course_images/semiology/vv_colour_example2.jpg)
+
+</br>
+* **Colour variation on three implatations: points, lines and areas**
+![visual variable color example3](http://dl.dropbox.com/u/108352435/course_images/semiology/vv_colour_example3.jpg)
+
+</br>
+* **Issue with the frequently used rainbow palette. The eyes order using values not colours!**
+![visual variable color example4](http://dl.dropbox.com/u/108352435/course_images/semiology/vv_colour_example4.jpg)
+
+</br>
+
+![visual variable color example5](http://dl.dropbox.com/u/108352435/course_images/semiology/vv_colour_example5.jpg)
+
+</br>
+
+![visual variable color example6](http://dl.dropbox.com/u/108352435/course_images/semiology/vv_colour_example6.jpg)
+
+
+
 
 #### 2.6 Visual variable: Orientation
 
@@ -186,5 +216,4 @@ Properties of visual variables can be:
 
 
 
-### 3. The notion of efficiency
 

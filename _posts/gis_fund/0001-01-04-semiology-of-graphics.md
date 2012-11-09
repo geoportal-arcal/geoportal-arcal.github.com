@@ -6,6 +6,8 @@ tags : [Semiology of graphics]
 
 **WORK IN PROGRESS..**
 
+***Preliminary note: This material is based on the important and fundamental Jacques Bertin's book: ["Semiology of Graphics"](http://esripress.esri.com/display/index.cfm?fuseaction=display&websiteID=190)***
+
 By Semiology of Graphics, we refer to the theoretical framework describing the graphic means and techniques we can use to represent in an effective way the information to be shown on graphical charts and maps. The purpose of a graphical chart or map is to offer a synoptic view of a phenomenon. We want to perceive at a glance the structure of the data (extreme values, spatial distribution, relationships, ...) usually stored in tables. 
 
 To illustrate this point, compare two different views of the same information:

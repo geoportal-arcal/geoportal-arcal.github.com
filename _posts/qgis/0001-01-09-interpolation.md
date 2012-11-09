@@ -4,8 +4,6 @@ category : QGIS
 tags : [desktop GIS, raster, interpolation, GRASS, GDAL]
 ---
 
-**WORK IN PROGRESS ...**
-
 In this tutorial, we will see how to use QGIS GRASS plugin and GDAL command line utility programs to perform interpolation.
 
 **[GRASS](http://grass.osgeo.org/intro/index.php)** (Geographic Resources Analysis Support System) is an extremely powerful and full-fledged GIS software. Originally developed by the U.S. Army Construction Engineering Research Laboratories (USA-CERL, 1982-1995), a branch of the US Army Corp of Engineers, as a tool for land management and environmental planning by the military, GRASS GIS has evolved into a powerful utility with a wide range of applications in many different areas of scientific research. GRASS is currently used in academic and commercial settings around the world, as well as many governmental agencies including NASA, NOAA, the U.S. Census Bureau, USGS, and many environmental consulting companies.
@@ -121,15 +119,118 @@ See video tutorial either on your local copy or on YouTube [GRASS-Exporting Rast
 
 ### 5 Finetuning the raster file with GDAL
 
+Our objective is to prepare the raster file in order to be published via TileMill and MapBox. To do so, it requires two main operations:
+
+* associate a colour palette
+* reproject to EPSG:3785
+
+### 5.1 GDAL introduction
+
+GDAL utilities is accessed through a command line interface (CLI). These utilities are accessible once you install **FWTools**.
+
+**Command line interface reminder**
+
+From *Windows start Menu*, in "Search programs and files", write **cmd.exe*** and click "Return/Enter". The command line interface should be launched now.
+
+![Start Menu windows](http://dl.dropbox.com/u/108352435/course_images/QGIS/Windows7StartMenu.jpg).
+
+* **dir**:To list files and folder of the current folder
+
+* **cd *name_of_the_folder***: To go to a new folder
+
+* **dl *name_of_file***: To delete a folder
+
+See video tutorial either on your local copy or on YouTube [CLI-Introduction](http://www.youtube.com/watch?feature=player_detailpage&v=QWdJ57eUV28)
+
+Once you accessd through CLI the /dss_course_dataset/qgis/5-interpolation/ folder, write 
+
+    gdalinfo dem.tiff
+
+This command will display a bunch of information on the specified raster file (projection, corner coordinates, max and min values, resolution, ...)
+
+
+See video tutorial either on your local copy or on YouTube [GDAL-Launching utilities](http://www.youtube.com/watch?feature=player_detailpage&v=f9lSRvf3NBg)
+
+### 5.2 Associate a colour palette
+
+At the moment, each pixel is associated with a value of elevation, which is interesting if you want to use it for geospatial analysis. But what we want know is to associate to each pixel a color allow to order visually the series of elevation values (from min to max altitude). 
+
+![visual variable color example6](http://dl.dropbox.com/u/108352435/course_images/semiology/vv_colour_example6.jpg)
+ 
+In our case, we will simply associate a black and white colour palette to each pixel based on their value (black for min value and white for max value and different degrees of gray for intermediate values).
+
+To do so, you simply need to write the following gdal command:
+
+    gdaldem color-relief input_file palette.txt output_file
+
+the structure and content of the palette.text file is:
+
+    761	0	0	0
+    761.6	50	50	50
+    762.2	100	100	100
+    762.8	150	150	150
+    763.4	200	200	200
+    764	250	250	250
+
+with:
+
+* first column: min limit of the class (761, 761.6, ... in meters)
+* second column: red value
+* third column: green value
+* fourth column: blue value
+
+In our case, we will use the following palette file:
+
+    /dss_course_dataset/qgis/5-interpolation/palettes/bw_dem.txt
+
+Our exact command is:
+
+    gdaldem color-relief dem.tiff palettes\bw_dem.txt dem_coloured.tiff
+
+Open the newly created **dem_coloured.tiff** file with QGIS, you will see that pixel elevation values are now replaced by a triplet of value (Band1, Band2, Band3).
+
+
+See video either on your local copy or on YouTube [GDAL-Checking Coloured Pixel Values with QGIS](http://www.youtube.com/watch?feature=player_detailpage&v=lk7qM0PC-v0)
+ 
+### 5.3 Reproject
+
+To reproject an existing geotif raster file:
+
+    gdalwarp -s_srs EPSG:4326 -t_srs EPSG:3785 -r bilinear input_file.tif output_file.tif
+
+with:
+
+* -s_srs EPSG:4326 *projection of input file (source spatial reference system)*
+
+* -s_srs EPSG:4326 *projection of input file (target spatial reference system)*
+
+* -r bilinear *resampling method*
+
+
+**The geotiff file is now ready to be published via TileMill and MapBox**
+
+
+**EXERCICE: **
+
+Use the following file with QGIS:
+
+    /dss_course_dataset/qgis/5-interpolation/cesium_900913.shp
+
+Interpolate values of **soil_loss** using the RST GRASS module.
+
+Style it using the:
+
+    /dss_course_dataset/qgis/5-interpolation/palettes/soil_loss.txt
+
+### 6. Other GDAL utilities
+
+Example:
+
+    gdaldem slope dem.tiff slope.tiff
+
+Create a raster file showing slope of specified input digital elevation model.
+
+[Look at GDAL utilities page for further information](http://www.gdal.org/gdal_utilities.html)
 
 
 
-    gdalwarp -s_srs EPSG:4269 -t_srs EPSG:3785 -r bilinear dc.tif dc-3785.tif
-
-    gdaldem hillshade -co compress=lzw dc-3785.tif dc-hillshade-3785.tif
-
-    gdaldem color-relief input-dem.tif ramp.txt output-color-relief.tif
-
-    gdaldem slope dc-3785.tif dc-slope-3785.tif
-
-    gdalinfo -stats dem_slope.tif

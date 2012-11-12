@@ -25,7 +25,7 @@ Training hours schedule:
 * 8h00-10h00: Course
 * 10h00-10h30: *Coffee break*
 * 10h30-13h00: Course
-* 10h00-10h30: *Lunch*
+* 13h00-14h30: *Lunch*
 
 **AFTERNOON**
 * 14h30-16h00: Course

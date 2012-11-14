@@ -208,11 +208,36 @@ Properties of visual variables can be:
 ![visual variable color example6](http://dl.dropbox.com/u/108352435/course_images/semiology/vv_colour_example6.jpg)
 
 
-
-
 #### 2.6 Visual variable: Orientation
 
+</br>
+
+![visual variable orientation](http://dl.dropbox.com/u/108352435/course_images/semiology/vv_orientation.jpg)
+
+</br>
+* **Here variation is line or line-pattern ranging from horizontal to vertical**
+![visual variable orientation example1](http://dl.dropbox.com/u/108352435/course_images/semiology/vv_orientation_example1.jpg)
+
+</br>
+
+* **Colour variation on three implatations: points, lines and areas**
+![visual variable orientation example2](http://dl.dropbox.com/u/108352435/course_images/semiology/vv_orientation_example2.jpg)
+
 #### 2.7 Visual variable: Texture
+
+</br>
+
+![visual variable texture](http://dl.dropbox.com/u/108352435/course_images/semiology/vv_texture.jpg)
+
+</br>
+
+![visual variable texture example1](http://dl.dropbox.com/u/108352435/course_images/semiology/vv_texture_example1.jpg)
+
+</br>
+
+![visual variable texture example2](http://dl.dropbox.com/u/108352435/course_images/semiology/vv_texture_example2.jpg)
+
+
 
 
 

@@ -16,7 +16,32 @@ A good introduction to these topics is:
  
 The purpose of this page is not to dive into these theories but only to provide the basics knowledge required to specify colors. There are many different reds, blues, ... we need an accurate system allowing to specify it.
 
-As an introduction, we will explore how to specify colors in a vector graphics editor software like Inkscape (open source). You can download it here [http://inkscape.org/](http://inkscape.org/).
+
+### 1. Additive color model
+![color model](http://dl.dropbox.com/u/108352435/course_images/semiology/colormodel-rgb.gif)
+
+
+### 2. Hue versus Value
+![color hue-value](http://dl.dropbox.com/u/108352435/course_images/semiology/coulour_value_hue.jpg)
+
+
+### 3. Hue versus Saturation
+![color hue-saturation](http://dl.dropbox.com/u/108352435/course_images/semiology/coulour_hue_saturation.jpg)
+
+### 4. Hue versus Saturation (high Value)
+![color hue-saturation-light](http://dl.dropbox.com/u/108352435/course_images/semiology/coulour_hue_saturation_light.jpg)
+
+
+### 5. Hue versus Saturation (Low Value)
+![color hue-saturation-deep](http://dl.dropbox.com/u/108352435/course_images/semiology/coulour_hue_saturation_deep.jpg)
+
+###6. Encoding
+
+Each primary colour is encoded between **0** and **255**
+
+Each color being a composition of Red, Green, Blue, a color can be specified as (125,122,12) for instance in decimal.
+
+[Color are frequently specified as Hexadecimal as well.](http://en.wikipedia.org/wiki/Hexadecimal)
 
 
 

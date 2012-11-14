@@ -120,7 +120,7 @@ Training hours schedule:
 
 **Special events:**
 
-* The 14th evening: Cena an Casa Pena
+* The 15th evening: Cena an Casa Pena
 * The 17th: Touristic tour in Guanajuato and Parque bicentenario
 * The 20th evening: Charreada mexicana
 * The 23th evening: Cena/clausura

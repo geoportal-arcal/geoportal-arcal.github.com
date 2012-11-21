@@ -1,8 +1,17 @@
 ---
 layout: post
 category : QGIS
-tags : [desktop GIS, GRASS]
+tags : [desktop GIS, WORKFLOWS]
 ---
+
+
+### 1. Importing CSV file into QGIS
+
+* Create a **.csvt** file with type of attribute data ("Real", "Integer", "String")
+
+* Import it into QGIS with "Add Delimited Text Layer" tool 
+
+* 
 
 **Preliminary note: GRASS location, mapset must be defined in order to access GRASS toolbox in QGIS interface**
 

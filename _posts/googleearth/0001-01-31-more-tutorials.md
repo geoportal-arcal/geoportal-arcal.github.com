@@ -14,3 +14,5 @@ Official GoogleEarth tutorials in spanish [http://support.google.com/earth/?hl=e
 
 [GoogleEarth blog](http://www.gearthblog.com/index.html)
 
+[The Example of ARCAL RLA 5/051 kmz file](http://dl.dropbox.com/u/108352435/countries/REGIONAL/kml/ARCAL%20RLA%205051.kmz)
+

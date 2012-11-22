@@ -1,6 +1,6 @@
 ---
 layout: post
-category : DSS
+category : geoportal-DSS
 tags : [DSS, geo tags]
 ---
 

@@ -117,6 +117,8 @@ We will export the raster file created as **GeoTiff**. **GeoTiff** is a very com
 See video tutorial either on your local copy or on YouTube [GRASS-Exporting Raster as GeoTiff](http://www.youtube.com/watch?feature=player_detailpage&v=QHNgLXnyy5s)
 
 
+**IMPORTANT: THIS SECTION REQUIRED MINIMUM KNOWLEDGE OF COMMAND LINE INTERFACES DOS OR LINUX LIKE. OTHER OPTIONS ARE AVAILABLE THROUGH GRASS (see Workflows tutorial)**
+
 ### 5 Finetuning the raster file with GDAL
 
 Our objective is to prepare the raster file in order to be published via TileMill and MapBox. To do so, it requires two main operations:
@@ -233,4 +235,12 @@ Create a raster file showing slope of specified input digital elevation model.
 [Look at GDAL utilities page for further information](http://www.gdal.org/gdal_utilities.html)
 
 
+### 7. General remarks on Digital Elevation models
 
+To create slope raster file or contour lines vector files, you can either use the GDAL tollkit (see above) or GRASS.
+
+GRASS modules of interest are:
+
+* **r.slope**: create a slope raster file from DEM raster fil. If value to be interpolated in GRASS 
+
+* **r.contour**: create contour lines vector file from DEM raster file

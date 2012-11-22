@@ -11,17 +11,32 @@ tags : [desktop GIS, WORKFLOWS]
 
 * Import it into QGIS with "Add Delimited Text Layer" tool 
 
-* 
+* Save it as shapefile. 
 
-**Preliminary note: GRASS location, mapset must be defined in order to access GRASS toolbox in QGIS interface**
 
 ### 1. Interpolate with RST
 
-1. Import QGIS vector into Grass with **v.in.ogr.qgis** module
+1. Create a vector layer delimiting your area of interest (named here *limit*) if required with QGIS)
 
-2. Set raster region (through GRASS browser or QGIS toolbox): extent + resolution
+2. Open or create a new GRASS region/mapset
 
-3. Intepolate with  **v.surf.rst** module
+2. Import QGIS vectors (mask and vector file to be interpolated) into Grass with **v.in.ogr.qgis** module
+
+3. Convert the newly imported *limit* layer to raster with **v.to.rast** module
+
+4. Intepolate with  **v.surf.rst** module
+
+5. Apply your own or predetermined colour palette (see below on how to create customized colour palette) with **r.colors.rules** or **r.colors.table** to your new inteporlated raster file
+
+6. Export and colourized definitely your raster file with **r.out.tiff** (with compression: defflate and "Output TIFF world file" checked) 
+
+7. Now on QGIS, clip (cut the newly created tiff file with the boundary of your **limit** layer) with Raster/Extraction/Clipper
+
+**IMPORTANT NOTES:**
+
+* When you export in **tiff** and colourize your GRASS raster file, values will be transformed into integers, so if the range of value to be interpolated is too small (for instance between 0.1 and 0.9) then your output **tiff** will contain only one colour (as values will be converted to integer -here 0-). The solution is to scale your raster value with **r.map.calculator** module (multiplying your values by 100 or 1000 for instance).
+
+* You might face a problem in clipping the raster file with QGIS Clipper tool (message 'Cannot compute bounding box of cutline' appearing). A work around is to edit the gdal code (press the yellow pencil) and to replace the *-crop_to_line* command argument by *-r cubic* one.
 
 
 ### 2. Design colour palette (difference oriented)
@@ -44,5 +59,4 @@ tags : [desktop GIS, WORKFLOWS]
   
 * Use this text file to colourized your interpolation raster with **r.colors.rules** module
 
-* Export and colourized definitely your raster file with **r.out.tiff** (with compression: defflate and "Output TIFF world file" checked) 
 

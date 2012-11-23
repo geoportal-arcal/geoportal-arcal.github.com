@@ -38,6 +38,8 @@ tags : [desktop GIS, WORKFLOWS]
 
 * You might face a problem in clipping the raster file with QGIS Clipper tool (message 'Cannot compute bounding box of cutline' appearing). A work around is to edit the gdal code (press the yellow pencil) and to replace the *-crop_to_line* command argument by *-r cubic* one.
 
+See video tutorial on YouTube [WORKFLOW-Interpolation RST](http://www.youtube.com/watch?feature=player_detailpage&v=__OvulrAFsg)
+
 
 ### 2. Design colour palette (difference oriented)
 
